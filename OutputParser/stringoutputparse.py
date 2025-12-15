@@ -6,7 +6,7 @@ load_dotenv()
 
 llm = HuggingFaceEndpoint(
     repo_id="google/gemma-2-2b-it",
-    task="text-generation"
+    task="text-generation",
 )
 
 model = ChatHuggingFace(llm=llm)
